@@ -1,13 +1,16 @@
+const path = require('path')
+
 module.exports = {
   entry: './index.js',
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname)
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.jsx?$/,

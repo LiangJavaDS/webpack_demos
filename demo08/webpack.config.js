@@ -1,10 +1,12 @@
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const path = require('path')
 
 module.exports = {
   entry: './main.js',
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname)
   },
   plugins: [
     new HtmlwebpackPlugin({

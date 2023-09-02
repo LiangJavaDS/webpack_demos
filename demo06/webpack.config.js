@@ -1,10 +1,13 @@
+const path = require('path')
+
 module.exports = {
   entry: './main.jsx',
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname)
   },
   module: {
-    rules:[
+    rules: [
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
@@ -22,10 +25,10 @@ module.exports = {
             loader: 'style-loader'
           },
           {
-             loader: 'css-loader',
-             options: {
-               modules: true
-             }
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
           }
         ]
       }

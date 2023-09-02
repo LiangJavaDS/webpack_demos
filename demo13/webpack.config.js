@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -6,7 +7,8 @@ module.exports = {
     vendor: ['jquery'],
   },
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname)
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
