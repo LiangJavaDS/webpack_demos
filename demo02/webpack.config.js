@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'production',
   // 入口使用对象语法
   entry: {
     bundle1: './main1.js',

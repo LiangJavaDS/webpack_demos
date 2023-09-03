@@ -1,10 +1,14 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'production',
   entry: './main.jsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname)
+  },
+  devServer: {
+    static: '.',
   },
   module: {
     rules: [
@@ -14,7 +18,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },

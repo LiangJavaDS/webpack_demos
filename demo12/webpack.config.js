@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: {
     bundle1: './main1.jsx',
     bundle2: './main2.jsx'
@@ -8,8 +9,11 @@ module.exports = {
   output: {
     filename: '[name].js'
   },
+  devServer: {
+    static: '.',
+  },
   module: {
-    rules:[
+    rules: [
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
