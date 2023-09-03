@@ -1,7 +1,7 @@
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const path = require('path')
-
+// learn 配置plugin
 module.exports = {
   mode: 'production',
   entry: './main.js',
