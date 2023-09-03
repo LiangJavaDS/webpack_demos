@@ -2,8 +2,12 @@
   "name": "webpack-demo5",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack serve --open",
     "build": "webpack --mode production"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "url-loader": "^4.1.1"
+  }
 }
