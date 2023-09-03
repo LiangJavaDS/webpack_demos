@@ -1,5 +1,5 @@
 const path = require('path')
-
+// learn 多文件多入口，使用占位符保证打包后的文件名称唯一
 module.exports = {
   mode: 'production',
   // 入口使用对象语法

@@ -1,5 +1,5 @@
 const path = require('path')
-
+// learn 解析jsx
 module.exports = {
   mode: 'production',
   entry: './main.jsx',

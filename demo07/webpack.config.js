@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin');
-
+// learn 启用js文件压缩
 module.exports = {
   mode: 'production',
   entry: './main.js',

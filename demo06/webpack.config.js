@@ -1,5 +1,7 @@
 const path = require('path')
-
+var webpack = require('webpack');
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// learn 启用css本地模块，会将class随机编译
 module.exports = {
   mode: 'production',
   entry: './main.jsx',
@@ -10,6 +12,9 @@ module.exports = {
   devServer: {
     static: '.',
   },
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   module: {
     rules: [
       {

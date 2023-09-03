@@ -1,5 +1,5 @@
 const path = require('path')
-
+// learn 解析图片
 module.exports = {
   mode: 'production',
   mode: 'production',
